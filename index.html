@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+body {
+  margin: 0;
+  background:#C6426E;
+  
+}
+#joker ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #642B73;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  
+}
+#joker ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+#joker ul li a:active ,a:visited {
+  background-color: transparent;
+  text-decoration: none;
+    
+    background-color: #642B73;
+  color: white;
+}
+#joker ul li a:hover {
+  background-color: #555;
+  color: white;
+  
+}
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: rgb(4, 21, 26);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid rgb(4, 21, 26);
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(4, 21, 26);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body onload="myFunction()">
+
+<div id="loader">
+
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+        <div id="joker"> 
+                <ul>
+                  <li><a class="active" href="#summary">Summary</a></li>
+                  <li><a href="#work">Work Exprience</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                </ul>
+                </div>
+                <div id="page"style="margin-left:25%;padding:1px 16px; color:white; width:auto; ">
+                        <img  src="https://res.cloudinary.com/dge5lnpa8/image/upload/c_scale,q_64,r_100,w_100/a_0/v1566735691/IMG_0619_qtyl2p.jpg" alt="My picture">
+                        <h1 style="color: white;text-align: center;">Adeyanju Tobi`s Curriculum Vitae</h1>
+                        Email: tobiadeyanju@rocketmail.com<br>
+                        Telephone: +2348080998214<br>
+                        Address: 8,Goodwill Road Oluyole, Ibadan, Oyo State
+                        
+                <div id="summary">
+                  <h2 style="color: white;text-align: center;">SUMMARY</h2>
+                        Computer Science undergraduate that is passionate about data engineering and machine learning.<br>
+                        Highly-capable leader, having led multiple Senior class projects to completion.<br>
+                        Proficient in a range of modern technologies including Python and Java.<br>
+                        I am seeking for a competitive, challenging and Learning environment,<br>
+                        where I can serve your organization and establish and enjoyable career for myself.<br>
+                </div>
+                <div id="work">
+                        
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <h2 style="color: white; text-align: center;">WORK EXPERIENCE</h2>
+                                         <td>
+                                            ASSISTANT LECTURER (January - June 2017)<br>
+                                            APTECH,IBADAN<br>
+                                            <em>Responsibilities:</em><br>
+                                                <ul>
+                                                    <li>Helped the students to the fundamental of Internet programming</li><br>
+                                                    
+                                                </ul>      
+                                        </td>
+                                        <td>
+                                                NACOSS PUBLIC RELATION OFFICER (2016)<br>
+                                                COVENANT UNIVERSITY<br>
+                                                <em>Responsibilities:</em><br>
+                                                    <ul>
+                                                        <li>Assisted new students in Course registration</li>
+                                                        <li>ssisted in planning Departmental week</li><br>
+                                                        
+                                                    </ul>      
+                                            </td>
+                                            <td>
+                                                     TEENS CHURCH PRESIDENT (2012-2015)<br>
+                                                     RCCG, REDEMPTION PARISH,TEENS CHURCH,IBADAN<br>
+                                                    <em>Responsibilities:</em><br>
+                                                        <ul>
+                                                            <li>Represented the teenagers in a family talk show.</li>
+                                                            <li> Helped Organized Children's day.</li>        
+                                                            <li>Helped Organized Christmas Carol.</li><br>
+                                                            
+                                                        </ul>      
+                                                </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                
+                </div>
+                
+                <div id="education">
+                
+                        <table>
+                                <thead>
+                                        <h2 style="color: white; text-align: center;">EDUCATION</h2>
+                                    <tr>
+                                        <td>
+                                            COVENANT UNIVERSITY,OTA,OGUN STATE<br>
+                                            Computer Science<br>
+                                        <ul>
+                                            <li>Internet Programming</li>
+                                            <li> Operations Research.</li>  
+                                            <li>Problem Solving.</li>  
+                                            <li> Object Oriented programming.</li>  
+                                            <li>Data structure</li><br>
+                                                    
+                                        </ul>    
+                                        </td>
+                                    </tr>
+                                        <tr>
+                                        <td>
+                                                LEAD CITY UNIVERSITY,IBADAN.<br>
+                                                Computer Science<br>
+                                                <ul>
+                                                    <li>Human User Interface.</li>
+                                                    <li>Object Oriented programming. </li>  
+                                                    <li>Data structure.</li>
+                                                </ul>    
+                                            </td>
+                    
+                                    </tr>
+                                </thead>
+                                
+                    
+                            </table>
+                
+                </div>
+                
+                <div id="projects">
+                        <table>
+                                <thead>
+                                        <h2 style="color: white; text-align: center;" >PROJECTS</h2>
+                                    <tr>
+                                        <td>
+                                                STUDENT INFORMATION SYSTEM<br>
+                                                OBJECTIVE: Help management staff and lecturers to access<br> 
+                                                student information with ease.<br>
+                                                LANGUAGE:<br>
+                                                <ul> 
+                                                    <li>Java</li>
+                                                    <li>Mysqli </li>
+                                                 </ul>
+                                                 APPLICATION:<br>
+                                                <ul>
+                                                <li>Visual Studio code</li> 
+                                                <li>Wamp sever</li>
+                                                
+                                            </ul>
+                                        </td>
+                                        <br>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                                ECOMMERCE (ONLINE STORE )<br>
+                    
+                                                OBJECTIVE:  Help consumers get their needs (goods and services) with ease &nbsp<br>
+                                                LANGUAGE:<br>
+                                            <ul><li>Html</li> 
+                                                <li>Css</li> 
+                                                <li>Javascript</li>
+                                                <li> Php</li>
+                                                <li> Mysqli</li>
+                                            </ul>
+                                            APPLICATION:<br>
+                                                <ul>
+                                                <li>Visual Studio code</li> 
+                                                <li>Wamp sever</li></ul>
+                                        </td>
+                                    </tr>
+                                </thead>
+                    
+                            </table>
+                
+                
+                </div>
+                
+                <div id="skills">
+                        
+                        <h2 style="color: white; text-align: center;">SOCIAL SKILLS</h2><br>
+                        Problem solving skills<br>
+                        Ability to work under pressure <br>
+                        Team player<br>
+                        Verbal Communication skills <br>
+                        Numeracy skills<br>
+                        Good Organization<br>
+                
+                        <h2 style="color: white; text-align: center;padding-bottom: 15px;"> TECHNICAL SKILLS</h2><br>
+                        <b>HARDWARE/SYSTEMS:</b> Multiplexers, PC/Server, Admin, Routers, Switches, IP Telephony, Mac, Windows.<br>
+                        <b>DATABASES:</b> Wampserver , MS Access.<br>
+                        <b>LANGUAGES:</b> C++, JAVA, PHP, SQL, HTML &  CSS, JAVASCRIPT.</li><br>
+                        <b>APPLICATIONS:</b> Microsoft Office Suite:{Word, Excel, Outlook, PowerPoint} & Adobe XD.<br>
+                        <br>
+                        <br>
+                        
+                
+                </div>
+                
+                </div>
+                <form action="/mailer.php" style="max-width:500px;margin:auto">
+                    <h2>Contact Form</h2>
+                    <div class="input-container">
+                      <i class="fa fa-user icon"></i>
+                      <input class="input-field" minlength="4" type="text" placeholder="Name" name="name">
+                    </div>
+                    
+                  
+                    <div class="input-container">
+                      <i class="fa fa-envelope icon"></i>
+                      <input class="input-field"  type="email" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="input-container">
+                            <i class="fa fa-tag icon"></i>
+                            <input class="input-field" minlength="4" type="text" placeholder="Subject" name="subject">
+                          </div>
+                    
+                    <div class="input-container">
+                      <i class="fa fa-comment icon"></i>
+                      <input class="input-field" minlength="20" type="textarea" placeholder="Message" name="message">
+                    </div>
+                  
+                    <button type="submit" class="btn">Send</button>
+                  </form>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
